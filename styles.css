@@ -1,0 +1,122 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  font-size: 1rem;
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+}
+
+html {
+  background-color: hsl(185, 75%, 39%);
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  background-image: url(images/bg-pattern-top.svg),
+    url(images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+main {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  box-shadow: -1em 1em 3em rgba(0, 0, 0, 0.1), 1em 1em 3em rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 350px;
+  /* min-width: 325px; */
+  max-height: 375px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.text-box {
+  width: 100%;
+  min-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -3.5rem;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+
+.bg-pattern-card {
+  /* position: absolute; */
+  display: inline;
+}
+
+.user-name-city {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  /* border: 1px solid red; */
+
+  margin-bottom: 1rem;
+}
+
+.user-name-city * {
+  padding: 0;
+  margin: 0;
+}
+
+.avatar {
+  margin: auto;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.line {
+  height: 1px;
+  background-color: hsl(227, 10%, 46%);
+  border: none;
+  width: 100%;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  /* border: 1px solid blue; */
+  padding: 1rem;
+}
+
+.stats-container * {
+  padding: 0;
+  margin: 0;
+}
+
+.user-name-city h1,
+.each-stat h2 {
+  color: hsl(229, 23%, 23%);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.each-stat p {
+  font-size: 0.9rem;
+}
